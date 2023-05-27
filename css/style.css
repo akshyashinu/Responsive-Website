@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 40px;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+    cursor: pointer;
+    background-color: black;
+    
+}
+.navlist{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    
+}
+.navlist li{
+    list-style: none;
+    padding:40px;
+}
+.navlist li a{  
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.navlist li a:hover {
+    color: grey;
+}
+.rightnav{
+    padding: 0px 23px;
+    width: 30%;
+    text-align: right;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.background{
+    background: rgba(0, 0, 0,0.7) url(../bg.webp);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 40%;
+    margin: auto;
+    height: 70%;
+}
+.first-half{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.second-half{
+    width: 30%;
+}
+.second-half img{
+    width: 70%;
+    padding: 2px;
+    border: 4px solid white;
+    border-radius: 80px;
+    margin-left: 60px;
+}
+.text-big{
+    font-size: 30px;
+    text-shadow: 2px 2px rgb(237, 84, 84);
+    
+}
+.text-small{
+    font-size: 15px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+    background: none;
+    color: white;
+    cursor:pointer;
+}
+.btn-sm{
+    padding: 6px 10px;
+}
+.btn-dark{
+    color: black;
+    border:2px solid grey;
+    margin: auto
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.para{
+    padding: 0px 98px;
+}
+.left{
+    flex-direction: row-reverse;
+}
+.imgfluid{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 20px;
+    
+}
+.sectionsubtag{
+    padding: 16px 0px;
+}
+.contact{
+    background-color: rgb(225 222 215);
+    height: 800px;
+}
+.text-center{
+    text-align: center;
+    padding: 15px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+}
+.form{
+
+    max-width: 62%;
+    margin: 12px auto;
+}
+.form-input{
+    width: 100%;
+    padding: 5px 13px;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 30px 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    margin: 5px 3px;
+    height: 4px;
+}
+@media only screen and (max-width: 1144px){
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 600px;
+        transition: all 0.8s ease-out;
+    }
+    .right-nav{
+        text-align: center;
+    }
+    .btn-sm{
+       margin-right: 20px;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    #search{
+        max-width: 150%;
+        margin: auto;
+    }
+    .second-half img{
+        margin: auto;
+    }
+    .btn-sm{
+        margin-right: 59px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    
+    .sectionsubtag{
+        max-width: 150%;
+        text-align: center;
+    }
+    .logo{
+        margin-top: 30px;
+    }
+}
